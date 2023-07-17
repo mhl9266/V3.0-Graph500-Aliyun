@@ -369,8 +369,8 @@ int main(int argc, char** argv) {
 			get_edge_count_for_teps(&edge_visit_count);
 			edge_counts[bfs_root_idx] = (double)edge_visit_count;
 			if (rank == 0) fprintf(stderr, "TEPS for BFS %d is %g\n", bfs_root_idx, edge_visit_count / bfs_times[bfs_root_idx]);
+
 			/* Validate result. */
-			/*
 			if (!getenv("SKIP_VALIDATION")) {
 				if (rank == 0) fprintf(stderr, "Validating BFS %d\n", bfs_root_idx);
 
@@ -388,7 +388,6 @@ int main(int argc, char** argv) {
 				}
 			} else
 				validate_times[bfs_root_idx] = -1;
-				*/
 		}
 
 	}
@@ -418,8 +417,8 @@ int main(int argc, char** argv) {
 		edge_counts[bfs_root_idx] = (double)edge_visit_count;
 		if (rank == 0) fprintf(stderr, "Time for SSSP %d is %f\n", bfs_root_idx, sssp_times[bfs_root_idx]);
 		if (rank == 0) fprintf(stderr, "TEPS for SSSP %d is %g\n", bfs_root_idx, edge_counts[bfs_root_idx] / sssp_times[bfs_root_idx]);
+
 		/* Validate result. */
-		/*
 		if (!getenv("SKIP_VALIDATION")) {
 			if (rank == 0) fprintf(stderr, "Validating SSSP %d\n", bfs_root_idx);
 
@@ -438,7 +437,6 @@ int main(int argc, char** argv) {
 		} else {
 			validate_times2[bfs_root_idx] = -1;
 		}
-		*/
 	}
 
 #endif
@@ -532,7 +530,6 @@ int main(int argc, char** argv) {
 #endif
 			free(secs_per_edge); secs_per_edge = NULL;
 			free(edge_counts); edge_counts = NULL;
-		/*
 			get_statistics(validate_times, num_bfs_roots, stats);
 			fprintf(stdout, "bfs  min_validate:              %g\n", stats[s_minimum]);
 			fprintf(stdout, "bfs  firstquartile_validate:    %g\n", stats[s_firstquartile]);
@@ -551,7 +548,6 @@ int main(int argc, char** argv) {
 			fprintf(stdout, "sssp mean_validate:             %g\n", stats[s_mean]);
 			fprintf(stdout, "sssp stddev_validate:           %g\n", stats[s_std]);
 #endif
-			*/
 #if 0
 			for (i = 0; i < num_bfs_roots; ++i) {
 				fprintf(stdout, "Run %3d:                        %g s, validation %g s\n", i + 1, bfs_times[i], validate_times[i]);

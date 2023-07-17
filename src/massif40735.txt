@@ -1,0 +1,749 @@
+--------------------------------------------------------------------------------
+Command:            ./graph500_reference_bfs 13 16
+Massif arguments:   (none)
+ms_print arguments: massif.out.40735
+--------------------------------------------------------------------------------
+
+
+    MB
+106.9^   ##                                                                   
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   #                                                                    
+     |   # ::::@@@@@:::::::::::::::::::@:::::::::::::::::@:::@::::::::@:@:@:@:
+     |@@@# ::::@@@@ :::::::: ::: :: :::@::  ::::::::: : :@: :@: :: :::@:@:@:@:
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   4.875
+
+Number of snapshots: 97
+ Detailed snapshots: [1, 2 (peak), 7, 8, 9, 10, 27, 41, 44, 58, 68, 78, 88]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      2,374,337        9,828,848        9,805,196        23,652            0
+99.76% (9,805,196B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->42.70% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->42.70% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->42.70% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->42.70% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->42.70% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->42.70% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->42.70% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->42.70% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->28.00% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->28.00% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->28.00% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->28.00% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->28.00% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->28.00% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->13.34% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->13.34% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->13.34% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->13.34% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->13.34% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->13.34% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->09.75% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.75% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.75% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->09.75% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.63% (258,876B) in 127 places, all below massif's threshold (1.00%)
+| 
+->01.67% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.67% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.67% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.67% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  2    259,661,964      112,069,744      112,041,988        27,756            0
+99.98% (112,041,988B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->91.23% (102,236,672B) 0x110FCD: xmalloc (utils.c:115)
+| ->89.82% (100,663,296B) 0x10AF03: main (main.c:208)
+| | 
+| ->01.40% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->00.00% (512B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.74% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->03.74% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->03.74% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->03.74% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->03.74% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->03.74% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->03.74% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->03.74% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->02.46% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->02.46% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->02.46% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->02.46% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->02.46% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->02.46% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->01.38% (1,545,140B) in 137 places, all below massif's threshold (1.00%)
+| 
+->01.17% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  ->01.17% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    ->01.17% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      ->01.17% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+        ->01.17% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+          ->01.17% (1,310,720B) 0x10A87F: main (main.c:70)
+            
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  3    368,611,926       13,207,384       13,183,532        23,852            0
+  4    444,594,191       13,207,384       13,183,532        23,852            0
+  5    564,514,061       13,207,384       13,183,532        23,852            0
+  6    640,577,802       13,207,384       13,183,532        23,852            0
+  7    716,550,646       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8    792,508,404       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  9    868,508,237       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10    944,532,131       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 11  1,020,619,643       13,207,384       13,183,532        23,852            0
+ 12  1,096,351,786       13,207,384       13,183,532        23,852            0
+ 13  1,172,371,852       13,207,384       13,183,532        23,852            0
+ 14  1,248,622,389       13,207,384       13,183,532        23,852            0
+ 15  1,324,642,299       13,207,384       13,183,532        23,852            0
+ 16  1,400,737,702       13,207,384       13,183,532        23,852            0
+ 17  1,476,670,718       13,207,384       13,183,532        23,852            0
+ 18  1,552,781,381       13,207,384       13,183,532        23,852            0
+ 19  1,702,785,218       13,207,384       13,183,532        23,852            0
+ 20  1,780,769,475       13,207,384       13,183,532        23,852            0
+ 21  1,856,228,149       13,207,384       13,183,532        23,852            0
+ 22  1,965,195,545       13,207,384       13,183,532        23,852            0
+ 23  2,084,981,050       13,207,384       13,183,532        23,852            0
+ 24  2,193,308,115       13,207,384       13,183,532        23,852            0
+ 25  2,269,272,916       13,207,384       13,183,532        23,852            0
+ 26  2,345,239,285       13,207,384       13,183,532        23,852            0
+ 27  2,464,918,986       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 28  2,541,084,682       13,207,384       13,183,532        23,852            0
+ 29  2,616,498,520       13,207,384       13,183,532        23,852            0
+ 30  2,767,532,505       13,207,384       13,183,532        23,852            0
+ 31  2,845,254,346       13,207,384       13,183,532        23,852            0
+ 32  2,921,133,313       13,207,384       13,183,532        23,852            0
+ 33  2,997,389,963       13,207,384       13,183,532        23,852            0
+ 34  3,072,170,456       13,207,384       13,183,532        23,852            0
+ 35  3,149,333,269       13,207,384       13,183,532        23,852            0
+ 36  3,257,676,208       13,207,384       13,183,532        23,852            0
+ 37  3,333,739,303       13,207,384       13,183,532        23,852            0
+ 38  3,409,812,806       13,207,384       13,183,532        23,852            0
+ 39  3,529,557,611       13,207,384       13,183,532        23,852            0
+ 40  3,637,944,487       13,207,384       13,183,532        23,852            0
+ 41  3,714,013,151       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 42  3,833,805,401       13,207,384       13,183,532        23,852            0
+ 43  3,942,037,873       13,207,384       13,183,532        23,852            0
+ 44  4,018,021,431       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 45  4,137,401,253       13,207,384       13,183,532        23,852            0
+ 46  4,246,160,060       13,207,384       13,183,532        23,852            0
+ 47  4,322,218,501       13,207,384       13,183,532        23,852            0
+ 48  4,441,831,467       13,207,384       13,183,532        23,852            0
+ 49  4,565,442,344       13,207,384       13,183,532        23,852            0
+ 50  4,569,910,701       13,207,384       13,183,532        23,852            0
+ 51  4,575,680,475       13,207,384       13,183,532        23,852            0
+ 52  4,589,873,890       13,207,384       13,183,532        23,852            0
+ 53  4,594,047,489       13,207,384       13,183,532        23,852            0
+ 54  4,626,392,146       13,207,384       13,183,532        23,852            0
+ 55  4,644,451,507       13,207,384       13,183,532        23,852            0
+ 56  4,651,740,702       13,207,384       13,183,532        23,852            0
+ 57  4,668,633,333       13,207,384       13,183,532        23,852            0
+ 58  4,702,363,898       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 59  4,708,870,513       13,207,384       13,183,532        23,852            0
+ 60  4,721,795,582       13,207,384       13,183,532        23,852            0
+ 61  4,727,716,187       13,207,384       13,183,532        23,852            0
+ 62  4,734,003,942       13,207,384       13,183,532        23,852            0
+ 63  4,745,944,407       13,207,384       13,183,532        23,852            0
+ 64  4,778,422,064       13,207,384       13,183,532        23,852            0
+ 65  4,795,968,469       13,207,384       13,183,532        23,852            0
+ 66  4,803,770,633       13,207,384       13,183,532        23,852            0
+ 67  4,820,220,634       13,207,384       13,183,532        23,852            0
+ 68  4,854,447,053       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 69  4,869,412,431       13,207,384       13,183,532        23,852            0
+ 70  4,874,027,782       13,207,384       13,183,532        23,852            0
+ 71  4,879,799,337       13,207,384       13,183,532        23,852            0
+ 72  4,893,856,825       13,207,384       13,183,532        23,852            0
+ 73  4,898,165,350       13,207,384       13,183,532        23,852            0
+ 74  4,930,512,121       13,207,384       13,183,532        23,852            0
+ 75  4,949,025,655       13,207,384       13,183,532        23,852            0
+ 76  4,955,860,697       13,207,384       13,183,532        23,852            0
+ 77  4,973,172,493       13,207,384       13,183,532        23,852            0
+ 78  5,006,490,040       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 79  5,022,775,986       13,207,384       13,183,532        23,852            0
+ 80  5,026,078,872       13,207,384       13,183,532        23,852            0
+ 81  5,031,842,345       13,207,384       13,183,532        23,852            0
+ 82  5,047,115,203       13,207,384       13,183,532        23,852            0
+ 83  5,050,219,214       13,207,384       13,183,532        23,852            0
+ 84  5,082,562,479       13,207,384       13,183,532        23,852            0
+ 85  5,099,637,906       13,207,384       13,183,532        23,852            0
+ 86  5,102,156,380       13,207,384       13,183,532        23,852            0
+ 87  5,107,911,059       13,207,384       13,183,532        23,852            0
+ 88  5,123,902,541       13,207,384       13,183,532        23,852            0
+99.82% (13,183,532B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.78% (4,196,944B) 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->31.78% (4,196,944B) 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->31.78% (4,196,944B) 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->31.78% (4,196,944B) 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->31.78% (4,196,944B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|         ->31.78% (4,196,944B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|           ->31.78% (4,196,944B) 0x10EE0C: aml_init (aml.c:259)
+|             ->31.78% (4,196,944B) 0x10A87F: main (main.c:70)
+|               
+->24.83% (3,279,900B) 0x110FCD: xmalloc (utils.c:115)
+| ->11.91% (1,572,864B) 0x10AFC8: main (main.c:228)
+| | 
+| ->11.91% (1,572,864B) 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+| | ->11.91% (1,572,864B) 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+| |   ->11.91% (1,572,864B) 0x10AA94: main (main.c:296)
+| |     
+| ->01.02% (134,172B) in 10 places, all below massif's threshold (1.00%)
+|   
+->20.84% (2,752,512B) 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->20.84% (2,752,512B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->20.84% (2,752,512B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->20.84% (2,752,512B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->20.84% (2,752,512B) 0x10EE0C: aml_init (aml.c:259)
+|         ->20.84% (2,752,512B) 0x10A87F: main (main.c:70)
+|           
+->09.92% (1,310,720B) 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->09.92% (1,310,720B) 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->09.92% (1,310,720B) 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|     ->09.92% (1,310,720B) 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|       ->09.92% (1,310,720B) 0x10EE0C: aml_init (aml.c:259)
+|         ->09.92% (1,310,720B) 0x10A87F: main (main.c:70)
+|           
+->07.26% (958,464B) 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+| ->07.26% (958,464B) 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+|   ->07.26% (958,464B) 0x10F1DB: aml_init (aml.c:346)
+|     ->07.26% (958,464B) 0x10A87F: main (main.c:70)
+|       
+->02.71% (357,312B) in 136 places, all below massif's threshold (1.00%)
+| 
+->01.24% (163,840B) 0x10F13C: aml_init (aml.c:334)
+| ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+|   
+->01.24% (163,840B) 0x10F213: aml_init (aml.c:349)
+  ->01.24% (163,840B) 0x10A87F: main (main.c:70)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 89  5,126,286,824       13,207,384       13,183,532        23,852            0
+ 90  5,158,534,792       13,207,384       13,183,532        23,852            0
+ 91  5,175,748,607       13,207,384       13,183,532        23,852            0
+ 92  5,178,132,595       13,207,384       13,183,532        23,852            0
+ 93  5,183,890,809       13,207,384       13,183,532        23,852            0
+ 94  5,200,092,824       13,207,384       13,183,532        23,852            0
+ 95  5,202,533,525       13,207,384       13,183,532        23,852            0
+ 96  5,234,687,810       13,207,384       13,183,532        23,852            0

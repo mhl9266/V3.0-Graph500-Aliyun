@@ -271,10 +271,13 @@ SOATTR int aml_init( int *argc, char ***argv ) {
 	bytes = num_procs * sizeof(char[MPI_MAX_PROCESSOR_NAME]);
 	host_names = (char (*)[MPI_MAX_PROCESSOR_NAME]) malloc(bytes);
 	strcpy(host_names[myproc], host_name);
-	for (n=0; n<num_procs; n++)
+	for (n=0; n<num_procs; n++){
 		MPI_Bcast(&(host_names[n]),MPI_MAX_PROCESSOR_NAME, MPI_CHAR, n, MPI_COMM_WORLD);
+		//printf("host_name: %s num_procs:%d myproc:%d \n",host_names[n],num_procs,myproc);
+	}
 	qsort(host_names, num_procs, sizeof(char[MPI_MAX_PROCESSOR_NAME]), stringCmp);
 	color = 0;
+	
 	for (n=0; n<num_procs; n++)  {
 		if(n>0 && strcmp(host_names[n-1], host_names[n])) color++;
 		if(strcmp(host_name, host_names[n]) == 0) break;
@@ -285,12 +288,14 @@ SOATTR int aml_init( int *argc, char ***argv ) {
 	//find intranode numbers and make internode communicator
 	MPI_Comm_size( comm_intra, &group_size );
 	MPI_Comm_rank( comm_intra, &mylocal );
-
+	
+	//printf("comm_intra group_size:%d mylocal :%d",group_size,mylocal);
 	MPI_Comm_split(MPI_COMM_WORLD, mylocal, myproc, &comm);
 
 	MPI_Comm_size( comm, &num_groups );
 	MPI_Comm_rank( comm, &mygroup );
 
+	//printf("comm group_size:%d mylocal :%d",group_size,mylocal);
 	//first nonblocking barriers are blocking,so we call them now
 	MPI_Request hndl;
 	MPI_Ibarrier(comm,&hndl);

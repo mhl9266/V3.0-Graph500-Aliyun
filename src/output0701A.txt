@@ -1,0 +1,436 @@
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          20
+edgefactor:                     16
+NBFS:                           64
+graph_generation:               8.34372
+num_mpi_processes:              1
+construction_time:              6.03814
+bfs  min_time:                  0.50157
+bfs  firstquartile_time:        0.522069
+bfs  median_time:               0.542037
+bfs  thirdquartile_time:        0.553677
+bfs  max_time:                  0.789593
+bfs  mean_time:                 0.544835
+bfs  stddev_time:               0.0384443
+sssp min_time:                  1.22021
+sssp firstquartile_time:        2.03209
+sssp median_time:               2.26343
+sssp thirdquartile_time:        2.46323
+sssp max_time:                  3.15857
+sssp mean_time:                 2.23488
+sssp stddev_time:               0.365705
+min_nedge:                      16775818
+firstquartile_nedge:            16775818
+median_nedge:                   16775818
+thirdquartile_nedge:            16775818
+max_nedge:                      16775818
+mean_nedge:                     16775818
+stddev_nedge:                   0
+bfs  min_TEPS:                  2.12462e+07
+bfs  firstquartile_TEPS:        3.02989e+07
+bfs  median_TEPS:               3.09496e+07
+bfs  thirdquartile_TEPS:        3.21333e+07
+bfs  max_TEPS:                  3.34466e+07
+bfs  harmonic_mean_TEPS:     !  3.07906e+07
+bfs  harmonic_stddev_TEPS:      273725
+sssp min_TEPS:                  5.31121e+06
+sssp firstquartile_TEPS:        6.8105e+06
+sssp median_TEPS:               7.41168e+06
+sssp thirdquartile_TEPS:        8.25545e+06
+sssp max_TEPS:                  1.37483e+07
+sssp harmonic_mean_TEPS:     !  7.50638e+06
+sssp harmonic_stddev_TEPS:      154752
+bfs  min_validate:              2.1936
+bfs  firstquartile_validate:    2.3772
+bfs  median_validate:           2.9853
+bfs  thirdquartile_validate:    3.28771
+bfs  max_validate:              3.7478
+bfs  mean_validate:             2.86923
+bfs  stddev_validate:           0.465631
+sssp min_validate:              1.43819
+sssp firstquartile_validate:    1.60527
+sssp median_validate:           2.01632
+sssp thirdquartile_validate:    2.16508
+sssp max_validate:              2.66511
+sssp mean_validate:             1.91355
+sssp stddev_validate:           0.303295
+Command: np=1, scale=20, param=16 Execution Time: 528.348388971 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          20
+edgefactor:                     32
+NBFS:                           64
+graph_generation:               17.1965
+num_mpi_processes:              1
+construction_time:              13.7002
+bfs  min_time:                  0.853263
+bfs  firstquartile_time:        0.879372
+bfs  median_time:               0.901958
+bfs  thirdquartile_time:        0.920777
+bfs  max_time:                  1.11431
+bfs  mean_time:                 0.918879
+bfs  stddev_time:               0.0640882
+sssp min_time:                  2.39038
+sssp firstquartile_time:        3.57497
+sssp median_time:               4.09747
+sssp thirdquartile_time:        4.40842
+sssp max_time:                  5.31486
+sssp mean_time:                 4.02611
+sssp stddev_time:               0.656201
+min_nedge:                      33551962
+firstquartile_nedge:            33551962
+median_nedge:                   33551962
+thirdquartile_nedge:            33551962
+max_nedge:                      33551962
+mean_nedge:                     33551962
+stddev_nedge:                   0
+bfs  min_TEPS:                  3.01101e+07
+bfs  firstquartile_TEPS:        3.64387e+07
+bfs  median_TEPS:               3.7199e+07
+bfs  thirdquartile_TEPS:        3.81545e+07
+bfs  max_TEPS:                  3.93219e+07
+bfs  harmonic_mean_TEPS:     !  3.6514e+07
+bfs  harmonic_stddev_TEPS:      320856
+sssp min_TEPS:                  6.31286e+06
+sssp firstquartile_TEPS:        7.61088e+06
+sssp median_TEPS:               8.18847e+06
+sssp thirdquartile_TEPS:        9.38524e+06
+sssp max_TEPS:                  1.40362e+07
+sssp harmonic_mean_TEPS:     !  8.33359e+06
+sssp harmonic_stddev_TEPS:      171125
+bfs  min_validate:              4.26412
+bfs  firstquartile_validate:    4.76761
+bfs  median_validate:           5.88331
+bfs  thirdquartile_validate:    6.39761
+bfs  max_validate:              8.42538
+bfs  mean_validate:             5.77109
+bfs  stddev_validate:           0.980189
+sssp min_validate:              2.99113
+sssp firstquartile_validate:    3.17849
+sssp median_validate:           4.02037
+sssp thirdquartile_validate:    4.19741
+sssp max_validate:              4.81691
+sssp mean_validate:             3.79348
+sssp stddev_validate:           0.526883
+Command: np=1, scale=20, param=32 Execution Time: 1017.675929236 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          21
+edgefactor:                     16
+NBFS:                           64
+graph_generation:               17.9568
+num_mpi_processes:              1
+construction_time:              20.547
+bfs  min_time:                  1.05861
+bfs  firstquartile_time:        1.10033
+bfs  median_time:               1.12566
+bfs  thirdquartile_time:        1.14595
+bfs  max_time:                  1.31516
+bfs  mean_time:                 1.12644
+bfs  stddev_time:               0.0387068
+sssp min_time:                  3.86024
+sssp firstquartile_time:        4.88651
+sssp median_time:               5.28907
+sssp thirdquartile_time:        5.90674
+sssp max_time:                  7.0661
+sssp mean_time:                 5.33483
+sssp stddev_time:               0.785495
+min_nedge:                      33552502
+firstquartile_nedge:            33552502
+median_nedge:                   33552502
+thirdquartile_nedge:            33552502
+max_nedge:                      33552502
+mean_nedge:                     33552502
+stddev_nedge:                   0
+bfs  min_TEPS:                  2.55121e+07
+bfs  firstquartile_TEPS:        2.92792e+07
+bfs  median_TEPS:               2.9807e+07
+bfs  thirdquartile_TEPS:        3.0493e+07
+bfs  max_TEPS:                  3.16949e+07
+bfs  harmonic_mean_TEPS:     !  2.97864e+07
+bfs  harmonic_stddev_TEPS:      128952
+sssp min_TEPS:                  4.74837e+06
+sssp firstquartile_TEPS:        5.68037e+06
+sssp median_TEPS:               6.34375e+06
+sssp thirdquartile_TEPS:        6.86635e+06
+sssp max_TEPS:                  8.69182e+06
+sssp harmonic_mean_TEPS:     !  6.28933e+06
+sssp harmonic_stddev_TEPS:      116669
+bfs  min_validate:              5.79666
+bfs  firstquartile_validate:    6.22437
+bfs  median_validate:           7.49654
+bfs  thirdquartile_validate:    7.75969
+bfs  max_validate:              10.2729
+bfs  mean_validate:             7.18587
+bfs  stddev_validate:           0.85228
+sssp min_validate:              3.81127
+sssp firstquartile_validate:    4.26854
+sssp median_validate:           4.9407
+sssp thirdquartile_validate:    5.09781
+sssp max_validate:              5.8355
+sssp mean_validate:             4.77958
+sssp stddev_validate:           0.511708
+Command: np=1, scale=21, param=16 Execution Time: 1281.097076322 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          21
+edgefactor:                     32
+NBFS:                           64
+graph_generation:               36.1101
+num_mpi_processes:              1
+construction_time:              36.1705
+bfs  min_time:                  1.75227
+bfs  firstquartile_time:        1.81009
+bfs  median_time:               1.8373
+bfs  thirdquartile_time:        1.86608
+bfs  max_time:                  2.04653
+bfs  mean_time:                 1.84239
+bfs  stddev_time:               0.0529346
+sssp min_time:                  6.1591
+sssp firstquartile_time:        8.79653
+sssp median_time:               9.84444
+sssp thirdquartile_time:        11.0395
+sssp max_time:                  13.2859
+sssp mean_time:                 9.83401
+sssp stddev_time:               1.47575
+min_nedge:                      67105711
+firstquartile_nedge:            67105711
+median_nedge:                   67105711
+thirdquartile_nedge:            67105711
+max_nedge:                      67105711
+mean_nedge:                     67105711
+stddev_nedge:                   0
+bfs  min_TEPS:                  3.279e+07
+bfs  firstquartile_TEPS:        3.59608e+07
+bfs  median_TEPS:               3.6524e+07
+bfs  thirdquartile_TEPS:        3.70731e+07
+bfs  max_TEPS:                  3.82964e+07
+bfs  harmonic_mean_TEPS:     !  3.64233e+07
+bfs  harmonic_stddev_TEPS:      131846
+sssp min_TEPS:                  5.0509e+06
+sssp firstquartile_TEPS:        6.07867e+06
+sssp median_TEPS:               6.81661e+06
+sssp thirdquartile_TEPS:        7.62866e+06
+sssp max_TEPS:                  1.08954e+07
+sssp harmonic_mean_TEPS:     !  6.82384e+06
+sssp harmonic_stddev_TEPS:      129015
+bfs  min_validate:              11.8697
+bfs  firstquartile_validate:    13.1735
+bfs  median_validate:           14.5241
+bfs  thirdquartile_validate:    15.5539
+bfs  max_validate:              17.5008
+bfs  mean_validate:             14.3549
+bfs  stddev_validate:           1.39489
+sssp min_validate:              7.4519
+sssp firstquartile_validate:    8.1011
+sssp median_validate:           9.28513
+sssp thirdquartile_validate:    9.86346
+sssp max_validate:              12.1556
+sssp mean_validate:             9.06664
+sssp stddev_validate:           0.941535
+Command: np=1, scale=21, param=32 Execution Time: 2438.469153999 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          22
+edgefactor:                     16
+NBFS:                           64
+graph_generation:               37.2669
+num_mpi_processes:              1
+construction_time:              46.8765
+bfs  min_time:                  2.1942
+bfs  firstquartile_time:        2.28576
+bfs  median_time:               2.35021
+bfs  thirdquartile_time:        2.39032
+bfs  max_time:                  2.94865
+bfs  mean_time:                 2.34851
+bfs  stddev_time:               0.104123
+sssp min_time:                  10.9295
+sssp firstquartile_time:        12.4922
+sssp median_time:               13.4932
+sssp thirdquartile_time:        14.1244
+sssp max_time:                  16.8374
+sssp mean_time:                 13.4056
+sssp stddev_time:               1.29025
+min_nedge:                      67106224
+firstquartile_nedge:            67106224
+median_nedge:                   67106224
+thirdquartile_nedge:            67106224
+max_nedge:                      67106224
+mean_nedge:                     67106224
+stddev_nedge:                   0
+bfs  min_TEPS:                  2.27583e+07
+bfs  firstquartile_TEPS:        2.80742e+07
+bfs  median_TEPS:               2.85533e+07
+bfs  thirdquartile_TEPS:        2.93584e+07
+bfs  max_TEPS:                  3.05835e+07
+bfs  harmonic_mean_TEPS:     !  2.85739e+07
+bfs  harmonic_stddev_TEPS:      159608
+sssp min_TEPS:                  3.98554e+06
+sssp firstquartile_TEPS:        4.7511e+06
+sssp median_TEPS:               4.97334e+06
+sssp thirdquartile_TEPS:        5.37186e+06
+sssp max_TEPS:                  6.13993e+06
+sssp harmonic_mean_TEPS:     !  5.00584e+06
+sssp harmonic_stddev_TEPS:      60700.7
+bfs  min_validate:              15.1256
+bfs  firstquartile_validate:    16.7865
+bfs  median_validate:           17.981
+bfs  thirdquartile_validate:    18.6152
+bfs  max_validate:              21.5296
+bfs  mean_validate:             17.7519
+bfs  stddev_validate:           1.26489
+sssp min_validate:              10.2559
+sssp firstquartile_validate:    10.9557
+sssp median_validate:           11.7004
+sssp thirdquartile_validate:    12.1799
+sssp max_validate:              13.3101
+sssp mean_validate:             11.5933
+sssp stddev_validate:           0.736557
+Command: np=1, scale=22, param=16 Execution Time: 3101.536492925 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          22
+edgefactor:                     32
+NBFS:                           64
+graph_generation:               75.0948
+num_mpi_processes:              1
+construction_time:              103.864
+bfs  min_time:                  3.67225
+bfs  firstquartile_time:        3.84738
+bfs  median_time:               3.87839
+bfs  thirdquartile_time:        3.94361
+bfs  max_time:                  4.71613
+bfs  mean_time:                 3.90897
+bfs  stddev_time:               0.158739
+sssp min_time:                  16.5383
+sssp firstquartile_time:        24.2797
+sssp median_time:               25.7966
+sssp thirdquartile_time:        27.4442
+sssp max_time:                  36.1921
+sssp mean_time:                 26.011
+sssp stddev_time:               3.31631
+min_nedge:                      134213647
+firstquartile_nedge:            134213647
+median_nedge:                   134213647
+thirdquartile_nedge:            134213647
+max_nedge:                      134213647
+mean_nedge:                     134213647
+stddev_nedge:                   0
+bfs  min_TEPS:                  2.84584e+07
+bfs  firstquartile_TEPS:        3.40332e+07
+bfs  median_TEPS:               3.46055e+07
+bfs  thirdquartile_TEPS:        3.48844e+07
+bfs  max_TEPS:                  3.65481e+07
+bfs  harmonic_mean_TEPS:     !  3.43348e+07
+bfs  harmonic_stddev_TEPS:      175665
+sssp min_TEPS:                  3.70837e+06
+sssp firstquartile_TEPS:        4.89043e+06
+sssp median_TEPS:               5.20277e+06
+sssp thirdquartile_TEPS:        5.52781e+06
+sssp max_TEPS:                  8.11533e+06
+sssp harmonic_mean_TEPS:     !  5.15989e+06
+sssp harmonic_stddev_TEPS:      82883.5
+bfs  min_validate:              30.5143
+bfs  firstquartile_validate:    34.3465
+bfs  median_validate:           35.8835
+bfs  thirdquartile_validate:    37.3593
+bfs  max_validate:              40.0248
+bfs  mean_validate:             35.7389
+bfs  stddev_validate:           2.18673
+sssp min_validate:              20.482
+sssp firstquartile_validate:    21.6417
+sssp median_validate:           22.9184
+sssp thirdquartile_validate:    23.862
+sssp max_validate:              29.1739
+sssp mean_validate:             22.8531
+sssp stddev_validate:           1.48266
+Command: np=1, scale=22, param=32 Execution Time: 6092.438004869 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0SCALE:                          23
+edgefactor:                     16
+NBFS:                           64
+graph_generation:               77.393
+num_mpi_processes:              1
+construction_time:              112.661
+bfs  min_time:                  5.0702
+bfs  firstquartile_time:        5.3234
+bfs  median_time:               5.425
+bfs  thirdquartile_time:        5.53623
+bfs  max_time:                  6.15467
+bfs  mean_time:                 5.44263
+bfs  stddev_time:               0.207778
+sssp min_time:                  20.2958
+sssp firstquartile_time:        27.9585
+sssp median_time:               30.0753
+sssp thirdquartile_time:        32.1822
+sssp max_time:                  38.4757
+sssp mean_time:                 29.8567
+sssp stddev_time:               3.61862
+min_nedge:                      134213828
+firstquartile_nedge:            134213828
+median_nedge:                   134213828
+thirdquartile_nedge:            134213828
+max_nedge:                      134213828
+mean_nedge:                     134213828
+stddev_nedge:                   0
+bfs  min_TEPS:                  2.18068e+07
+bfs  firstquartile_TEPS:        2.42428e+07
+bfs  median_TEPS:               2.47399e+07
+bfs  thirdquartile_TEPS:        2.5212e+07
+bfs  max_TEPS:                  2.64711e+07
+bfs  harmonic_mean_TEPS:     !  2.46597e+07
+bfs  harmonic_stddev_TEPS:      118606
+sssp min_TEPS:                  3.48827e+06
+sssp firstquartile_TEPS:        4.17044e+06
+sssp median_TEPS:               4.46259e+06
+sssp thirdquartile_TEPS:        4.80046e+06
+sssp max_TEPS:                  6.61288e+06
+sssp harmonic_mean_TEPS:     !  4.49526e+06
+sssp harmonic_stddev_TEPS:      68641.2
+bfs  min_validate:              37.2195
+bfs  firstquartile_validate:    40.1223
+bfs  median_validate:           41.5743
+bfs  thirdquartile_validate:    42.5025
+bfs  max_validate:              44.3276
+bfs  mean_validate:             41.3186
+bfs  stddev_validate:           1.69527
+sssp min_validate:              24.9804
+sssp firstquartile_validate:    26.5362
+sssp median_validate:           27.3102
+sssp thirdquartile_validate:    28.178
+sssp max_validate:              31.1891
+sssp mean_validate:             27.4413
+sssp stddev_validate:           1.31384
+Command: np=1, scale=23, param=16 Execution Time: 7122.254771824 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 437201 RUNNING AT pxqvq0i0j990x54
+=   EXIT CODE: 139
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Segmentation fault (signal 11)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+Command: np=1, scale=23, param=32 Execution Time: 252.530449432 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 437328 RUNNING AT pxqvq0i0j990x54
+=   EXIT CODE: 139
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Segmentation fault (signal 11)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+Command: np=1, scale=24, param=16 Execution Time: 185.310584171 seconds
+
+host_name: pxqvq0i0j990x54 num_procs:1 myproc:0 
+comm_intra group_size:1 mylocal :0comm group_size:1 mylocal :0

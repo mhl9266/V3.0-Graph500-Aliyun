@@ -1,0 +1,718 @@
+desc: (none)
+cmd: ./graph500_reference_bfs 10 10
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2374318
+mem_heap_B=9805196
+mem_heap_extra_B=23652
+mem_stacks_B=0
+heap_tree=detailed
+n7: 9805196 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4196944 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 4196944 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 4196944 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 4196944 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 4196944 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      n1: 4196944 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+       n1: 4196944 0x10EE0C: aml_init (aml.c:259)
+        n0: 4196944 0x10A87F: main (main.c:70)
+ n1: 2752512 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 2752512 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 2752512 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 2752512 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 2752512 0x10EE0C: aml_init (aml.c:259)
+      n0: 2752512 0x10A87F: main (main.c:70)
+ n1: 1310720 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 1310720 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 1310720 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 1310720 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 1310720 0x10EE0C: aml_init (aml.c:259)
+      n0: 1310720 0x10A87F: main (main.c:70)
+ n1: 958464 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 958464 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 958464 0x10F1DB: aml_init (aml.c:346)
+    n0: 958464 0x10A87F: main (main.c:70)
+ n0: 258876 in 127 places, all below massif's threshold (1.00%)
+ n1: 163840 0x10F13C: aml_init (aml.c:334)
+  n0: 163840 0x10A87F: main (main.c:70)
+ n1: 163840 0x10F213: aml_init (aml.c:349)
+  n0: 163840 0x10A87F: main (main.c:70)
+#-----------
+snapshot=2
+#-----------
+time=18464991
+mem_heap_B=110592004
+mem_heap_extra_B=27756
+mem_stacks_B=0
+heap_tree=peak
+n5: 110592004 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 100786688 0x110FCD: xmalloc (utils.c:115)
+  n0: 100663296 0x10AF03: main (main.c:208)
+  n0: 123392 in 2 places, all below massif's threshold (1.00%)
+ n1: 4196944 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 4196944 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 4196944 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 4196944 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 4196944 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      n1: 4196944 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+       n1: 4196944 0x10EE0C: aml_init (aml.c:259)
+        n0: 4196944 0x10A87F: main (main.c:70)
+ n1: 2752512 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 2752512 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 2752512 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 2752512 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 2752512 0x10EE0C: aml_init (aml.c:259)
+      n0: 2752512 0x10A87F: main (main.c:70)
+ n0: 1545140 in 137 places, all below massif's threshold (1.00%)
+ n1: 1310720 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 1310720 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 1310720 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 1310720 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 1310720 0x10EE0C: aml_init (aml.c:259)
+      n0: 1310720 0x10A87F: main (main.c:70)
+#-----------
+snapshot=3
+#-----------
+time=27222785
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=33254051
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=39288984
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=45321693
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=51353899
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=60885006
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=66921891
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=75510420
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=81517523
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=87552747
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=97069571
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=103134170
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=109051044
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=115149696
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=123776258
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=129809410
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=138972879
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=145041661
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=153948204
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=159982220
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=169322137
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=175447046
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=181256409
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=190160910
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=196195209
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=203769328
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=214260733
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=223594700
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=229742538
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=235673619
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=241762681
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=250493015
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=259881234
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=268595943
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=274630416
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=280663403
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=290106270
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=296133041
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=302112830
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=308229948
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=314243000
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=322911448
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=detailed
+n8: 10081964 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4196944 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 4196944 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 4196944 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 4196944 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 4196944 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      n1: 4196944 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+       n1: 4196944 0x10EE0C: aml_init (aml.c:259)
+        n0: 4196944 0x10A87F: main (main.c:70)
+ n1: 2752512 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 2752512 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 2752512 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 2752512 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 2752512 0x10EE0C: aml_init (aml.c:259)
+      n0: 2752512 0x10A87F: main (main.c:70)
+ n1: 1310720 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 1310720 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 1310720 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 1310720 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 1310720 0x10EE0C: aml_init (aml.c:259)
+      n0: 1310720 0x10A87F: main (main.c:70)
+ n1: 958464 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 958464 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 958464 0x10F1DB: aml_init (aml.c:346)
+    n0: 958464 0x10A87F: main (main.c:70)
+ n0: 271296 in 136 places, all below massif's threshold (1.00%)
+ n3: 264348 0x110FCD: xmalloc (utils.c:115)
+  n0: 122880 0x10AFC8: main (main.c:228)
+  n1: 122880 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 122880 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 122880 0x10AA94: main (main.c:296)
+  n0: 18588 in 10 places, all below massif's threshold (1.00%)
+ n1: 163840 0x10F13C: aml_init (aml.c:334)
+  n0: 163840 0x10A87F: main (main.c:70)
+ n1: 163840 0x10F213: aml_init (aml.c:349)
+  n0: 163840 0x10A87F: main (main.c:70)
+#-----------
+snapshot=45
+#-----------
+time=328943836
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=337746991
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=344313754
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=349921352
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=356452413
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=359169961
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=362567061
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=365204485
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=368603528
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=371255986
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=373694870
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=377286969
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=380023923
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=383321787
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=detailed
+n8: 10081964 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4196944 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 4196944 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 4196944 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 4196944 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 4196944 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      n1: 4196944 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+       n1: 4196944 0x10EE0C: aml_init (aml.c:259)
+        n0: 4196944 0x10A87F: main (main.c:70)
+ n1: 2752512 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 2752512 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 2752512 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 2752512 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 2752512 0x10EE0C: aml_init (aml.c:259)
+      n0: 2752512 0x10A87F: main (main.c:70)
+ n1: 1310720 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 1310720 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 1310720 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 1310720 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 1310720 0x10EE0C: aml_init (aml.c:259)
+      n0: 1310720 0x10A87F: main (main.c:70)
+ n1: 958464 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 958464 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 958464 0x10F1DB: aml_init (aml.c:346)
+    n0: 958464 0x10A87F: main (main.c:70)
+ n0: 271296 in 136 places, all below massif's threshold (1.00%)
+ n3: 264348 0x110FCD: xmalloc (utils.c:115)
+  n0: 122880 0x10AFC8: main (main.c:228)
+  n1: 122880 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 122880 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 122880 0x10AA94: main (main.c:296)
+  n0: 18588 in 10 places, all below massif's threshold (1.00%)
+ n1: 163840 0x10F13C: aml_init (aml.c:334)
+  n0: 163840 0x10A87F: main (main.c:70)
+ n1: 163840 0x10F213: aml_init (aml.c:349)
+  n0: 163840 0x10A87F: main (main.c:70)
+#-----------
+snapshot=59
+#-----------
+time=386129425
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=389373436
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=392626043
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=395408901
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=398157026
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=401415248
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=404652488
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=407448926
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=410062953
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=413502484
+mem_heap_B=10081964
+mem_heap_extra_B=23852
+mem_stacks_B=0
+heap_tree=detailed
+n8: 10081964 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4196944 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 4196944 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 4196944 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 4196944 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 4196944 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      n1: 4196944 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+       n1: 4196944 0x10EE0C: aml_init (aml.c:259)
+        n0: 4196944 0x10A87F: main (main.c:70)
+ n1: 2752512 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 2752512 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 2752512 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 2752512 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 2752512 0x10EE0C: aml_init (aml.c:259)
+      n0: 2752512 0x10A87F: main (main.c:70)
+ n1: 1310720 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 1310720 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 1310720 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 1310720 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 1310720 0x10EE0C: aml_init (aml.c:259)
+      n0: 1310720 0x10A87F: main (main.c:70)
+ n1: 958464 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 958464 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 958464 0x10F1DB: aml_init (aml.c:346)
+    n0: 958464 0x10A87F: main (main.c:70)
+ n0: 271296 in 136 places, all below massif's threshold (1.00%)
+ n3: 264348 0x110FCD: xmalloc (utils.c:115)
+  n0: 122880 0x10AFC8: main (main.c:228)
+  n1: 122880 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 122880 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 122880 0x10AA94: main (main.c:296)
+  n0: 18588 in 10 places, all below massif's threshold (1.00%)
+ n1: 163840 0x10F13C: aml_init (aml.c:334)
+  n0: 163840 0x10A87F: main (main.c:70)
+ n1: 163840 0x10F213: aml_init (aml.c:349)
+  n0: 163840 0x10A87F: main (main.c:70)

@@ -1,0 +1,606 @@
+desc: --massif-out-file=massif.out
+cmd: mpirun -np 8 ./graph500_reference_bfs 25 100
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=310359
+mem_heap_B=24
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=314403
+mem_heap_B=8072
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=317633
+mem_heap_B=8236
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=319590
+mem_heap_B=8236
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=detailed
+n3: 8236 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n1: 141 0x4A6638E: strdup (strdup.c:42)
+  n0: 141 in 7 places, all below massif's threshold (1.00%)
+ n0: 47 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=322186
+mem_heap_B=8219
+mem_heap_extra_B=165
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=324782
+mem_heap_B=8214
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=327377
+mem_heap_B=8213
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=330659
+mem_heap_B=8168
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=333149
+mem_heap_B=8265
+mem_heap_extra_B=231
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=342478
+mem_heap_B=8313
+mem_heap_extra_B=239
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=346094
+mem_heap_B=8362
+mem_heap_extra_B=270
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=348622
+mem_heap_B=8499
+mem_heap_extra_B=381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=350820
+mem_heap_B=8587
+mem_heap_extra_B=485
+mem_stacks_B=0
+heap_tree=detailed
+n4: 8587 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n1: 313 0x4A6638E: strdup (strdup.c:42)
+  n0: 313 in 17 places, all below massif's threshold (1.00%)
+ n1: 144 0x1302A0: ??? (in /usr/bin/mpiexec.hydra)
+  n2: 144 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 120 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 120 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 120 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+      n0: 120 0x49EB082: (below main) (libc-start.c:308)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+ n0: 82 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=353008
+mem_heap_B=8674
+mem_heap_extra_B=590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=355356
+mem_heap_B=8843
+mem_heap_extra_B=709
+mem_stacks_B=0
+heap_tree=detailed
+n4: 8843 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n3: 473 0x4A6638E: strdup (strdup.c:42)
+  n0: 181 in 15 places, all below massif's threshold (1.00%)
+  n1: 163 0x1302C4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 163 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 161 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 161 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 161 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 161 0x49EB082: (below main) (libc-start.c:308)
+    n0: 2 in 1 place, below massif's threshold (1.00%)
+  n1: 129 0x1302B4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 129 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 96 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 96 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 96 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 96 0x49EB082: (below main) (libc-start.c:308)
+    n0: 33 in 1 place, below massif's threshold (1.00%)
+ n1: 240 0x1302A0: ??? (in /usr/bin/mpiexec.hydra)
+  n2: 240 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 216 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 216 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 216 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+      n0: 216 0x49EB082: (below main) (libc-start.c:308)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+ n0: 82 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=357879
+mem_heap_B=8929
+mem_heap_extra_B=799
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=361186
+mem_heap_B=9023
+mem_heap_extra_B=889
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=364851
+mem_heap_B=9205
+mem_heap_extra_B=1059
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=367716
+mem_heap_B=9280
+mem_heap_extra_B=1144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=370469
+mem_heap_B=9327
+mem_heap_extra_B=1201
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=372620
+mem_heap_B=9463
+mem_heap_extra_B=1305
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=375992
+mem_heap_B=9749
+mem_heap_extra_B=1403
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=379522
+mem_heap_B=9790
+mem_heap_extra_B=1506
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=381492
+mem_heap_B=9963
+mem_heap_extra_B=1549
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=384290
+mem_heap_B=9936
+mem_heap_extra_B=1576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=387321
+mem_heap_B=10038
+mem_heap_extra_B=1722
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=389340
+mem_heap_B=10111
+mem_heap_extra_B=1753
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=393234
+mem_heap_B=10224
+mem_heap_extra_B=1848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=395341
+mem_heap_B=10282
+mem_heap_extra_B=1894
+mem_stacks_B=0
+heap_tree=detailed
+n4: 10282 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n3: 1336 0x4A6638E: strdup (strdup.c:42)
+  n1: 698 0x1302C4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 698 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 696 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 696 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 696 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 696 0x49EB082: (below main) (libc-start.c:308)
+    n0: 2 in 1 place, below massif's threshold (1.00%)
+  n1: 471 0x1302B4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 471 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 438 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 438 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 438 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 438 0x49EB082: (below main) (libc-start.c:308)
+    n0: 33 in 1 place, below massif's threshold (1.00%)
+  n0: 167 in 15 places, all below massif's threshold (1.00%)
+ n1: 816 0x1302A0: ??? (in /usr/bin/mpiexec.hydra)
+  n2: 816 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 792 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 792 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 792 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+      n0: 792 0x49EB082: (below main) (libc-start.c:308)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+ n0: 82 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=397183
+mem_heap_B=11761
+mem_heap_extra_B=1903
+mem_stacks_B=0
+heap_tree=detailed
+n4: 11761 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n4: 2815 0x4A6638E: strdup (strdup.c:42)
+  n1: 1506 0x1309C4: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 1506 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+    n0: 1506 0x49EB082: (below main) (libc-start.c:308)
+  n1: 698 0x1302C4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 698 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 696 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 696 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 696 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 696 0x49EB082: (below main) (libc-start.c:308)
+    n0: 2 in 1 place, below massif's threshold (1.00%)
+  n1: 471 0x1302B4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 471 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 438 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 438 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 438 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 438 0x49EB082: (below main) (libc-start.c:308)
+    n0: 33 in 1 place, below massif's threshold (1.00%)
+  n0: 140 in 14 places, all below massif's threshold (1.00%)
+ n1: 816 0x1302A0: ??? (in /usr/bin/mpiexec.hydra)
+  n2: 816 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 792 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 792 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 792 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+      n0: 792 0x49EB082: (below main) (libc-start.c:308)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+ n0: 82 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=399569
+mem_heap_B=13291
+mem_heap_extra_B=1949
+mem_stacks_B=0
+heap_tree=detailed
+n4: 13291 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n4: 4321 0x4A6638E: strdup (strdup.c:42)
+  n1: 2194 0x1302C4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 2194 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 2192 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 2192 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 2192 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 2192 0x49EB082: (below main) (libc-start.c:308)
+    n0: 2 in 1 place, below massif's threshold (1.00%)
+  n1: 1506 0x1307A3: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 1506 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 1506 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+     n0: 1506 0x49EB082: (below main) (libc-start.c:308)
+  n1: 481 0x1302B4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 481 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 448 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 448 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 448 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 448 0x49EB082: (below main) (libc-start.c:308)
+    n0: 33 in 1 place, below massif's threshold (1.00%)
+  n0: 140 in 14 places, all below massif's threshold (1.00%)
+ n1: 840 0x1302A0: ??? (in /usr/bin/mpiexec.hydra)
+  n2: 840 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 816 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 816 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 816 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+      n0: 816 0x49EB082: (below main) (libc-start.c:308)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+ n0: 82 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=402772
+mem_heap_B=11953
+mem_heap_extra_B=2023
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=404830
+mem_heap_B=11958
+mem_heap_extra_B=2074
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=406932
+mem_heap_B=12001
+mem_heap_extra_B=2119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=409165
+mem_heap_B=12083
+mem_heap_extra_B=2173
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=411525
+mem_heap_B=12108
+mem_heap_extra_B=2252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=413812
+mem_heap_B=12149
+mem_heap_extra_B=2299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=416140
+mem_heap_B=12223
+mem_heap_extra_B=2329
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=418003
+mem_heap_B=12189
+mem_heap_extra_B=2307
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=420993
+mem_heap_B=12341
+mem_heap_extra_B=2435
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=423348
+mem_heap_B=12377
+mem_heap_extra_B=2487
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=425633
+mem_heap_B=12499
+mem_heap_extra_B=2533
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=428142
+mem_heap_B=12555
+mem_heap_extra_B=2581
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=430703
+mem_heap_B=12734
+mem_heap_extra_B=2618
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=433224
+mem_heap_B=12692
+mem_heap_extra_B=2684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=435873
+mem_heap_B=12739
+mem_heap_extra_B=2741
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=438519
+mem_heap_B=13029
+mem_heap_extra_B=2779
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=440295
+mem_heap_B=13029
+mem_heap_extra_B=2779
+mem_stacks_B=0
+heap_tree=peak
+n4: 13029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8048 0x12D731: ??? (in /usr/bin/mpiexec.hydra)
+  n1: 8048 0x11297B: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 8048 0x114869: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 8048 0x12E6F1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 8048 0x112D7B: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 8048 0x11620B: ??? (in /usr/bin/mpiexec.hydra)
+       n1: 8048 0x10F449: ??? (in /usr/bin/mpiexec.hydra)
+        n0: 8048 0x49EB082: (below main) (libc-start.c:308)
+ n3: 3651 0x4A6638E: strdup (strdup.c:42)
+  n1: 2671 0x1302C4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 2671 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 2669 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 2669 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 2669 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 2669 0x49EB082: (below main) (libc-start.c:308)
+    n0: 2 in 1 place, below massif's threshold (1.00%)
+  n1: 697 0x1302B4: ??? (in /usr/bin/mpiexec.hydra)
+   n2: 697 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 664 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 664 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+      n1: 664 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+       n0: 664 0x49EB082: (below main) (libc-start.c:308)
+    n0: 33 in 1 place, below massif's threshold (1.00%)
+  n0: 283 in 15 places, all below massif's threshold (1.00%)
+ n1: 1248 0x1302A0: ??? (in /usr/bin/mpiexec.hydra)
+  n2: 1248 0x130478: ??? (in /usr/bin/mpiexec.hydra)
+   n1: 1224 0x1307D1: ??? (in /usr/bin/mpiexec.hydra)
+    n1: 1224 0x130A5E: ??? (in /usr/bin/mpiexec.hydra)
+     n1: 1224 0x10FA59: ??? (in /usr/bin/mpiexec.hydra)
+      n0: 1224 0x49EB082: (below main) (libc-start.c:308)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+ n0: 82 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=440427
+mem_heap_B=13022
+mem_heap_extra_B=2786
+mem_stacks_B=0
+heap_tree=empty

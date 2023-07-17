@@ -1,0 +1,591 @@
+desc: (none)
+cmd: ./graph500_reference_bfs 23 16
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2374337
+mem_heap_B=9805196
+mem_heap_extra_B=23652
+mem_stacks_B=0
+heap_tree=detailed
+n7: 9805196 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4196944 0x4B8D10E: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 4196944 0x4B7BE70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 4196944 0x4B70C86: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 4196944 0x4B62C07: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 4196944 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+      n1: 4196944 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+       n1: 4196944 0x10EE0C: aml_init (aml.c:259)
+        n0: 4196944 0x10A87F: main (main.c:70)
+ n1: 2752512 0x4B6D893: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 2752512 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 2752512 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 2752512 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 2752512 0x10EE0C: aml_init (aml.c:259)
+      n0: 2752512 0x10A87F: main (main.c:70)
+ n1: 1310720 0x4B6D95D: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 1310720 0x4B62E08: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 1310720 0x4A59F89: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+    n1: 1310720 0x4A599B2: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+     n1: 1310720 0x10EE0C: aml_init (aml.c:259)
+      n0: 1310720 0x10A87F: main (main.c:70)
+ n1: 958464 0x4B69C70: ??? (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n1: 958464 0x4A63F9F: PMPI_Recv_init (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+   n1: 958464 0x10F1DB: aml_init (aml.c:346)
+    n0: 958464 0x10A87F: main (main.c:70)
+ n0: 258876 in 127 places, all below massif's threshold (1.00%)
+ n1: 163840 0x10F13C: aml_init (aml.c:334)
+  n0: 163840 0x10A87F: main (main.c:70)
+ n1: 163840 0x10F213: aml_init (aml.c:349)
+  n0: 163840 0x10A87F: main (main.c:70)
+#-----------
+snapshot=2
+#-----------
+time=423565707313
+mem_heap_B=1721081860
+mem_heap_extra_B=31788
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1721081860 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 1711276544 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n0: 100663296 0x10AF03: main (main.c:208)
+  n0: 512 in 1 place, below massif's threshold (1.00%)
+ n0: 9805316 in 140 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=462832302805
+mem_heap_B=3532996616
+mem_heap_extra_B=39816
+mem_stacks_B=0
+heap_tree=peak
+n3: 3532996616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3254755848 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n1: 1610588160 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 1610588160 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 1610588160 0x10AA94: main (main.c:296)
+  n0: 33554952 in 3 places, all below massif's threshold (1.00%)
+ n1: 268435460 0x111015: xcalloc (utils.c:126)
+  n1: 268435460 0x10C4BF: convert_graph_to_oned_csr (csr_reference.c:83)
+   n1: 268435460 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 268435460 0x10AA94: main (main.c:296)
+ n0: 9805308 in 140 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=535134042850
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=658059730552
+mem_heap_B=3466937892
+mem_heap_extra_B=55996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=735958125233
+mem_heap_B=3466937892
+mem_heap_extra_B=55996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=813940542125
+mem_heap_B=3466937892
+mem_heap_extra_B=55996
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3466937892 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3356469276 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n1: 1610588160 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 1610588160 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 1610588160 0x10AA94: main (main.c:296)
+  n0: 135268380 in 10 places, all below massif's threshold (1.00%)
+ n1: 100663308 0x4A73C37: PMPI_Alloc_mem (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n2: 100663308 0x10D339: xMPI_Alloc_mem (utils.c:70)
+   n0: 67108872 0x10AC15: main (main.c:343)
+   n0: 33554436 in 1 place, below massif's threshold (1.00%)
+ n0: 9805308 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=891839390638
+mem_heap_B=3466937892
+mem_heap_extra_B=55996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1002609193469
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1080507620391
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1236304547315
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1314287016482
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1470083819622
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1625880820507
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1703779529769
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1826705280885
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1982502690330
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2060485373788
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2138383879338
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2216366386385
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2294264996077
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3466937900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3356469276 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n1: 1610588160 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 1610588160 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 1610588160 0x10AA94: main (main.c:296)
+  n0: 135268380 in 10 places, all below massif's threshold (1.00%)
+ n1: 100663308 0x4A73C37: PMPI_Alloc_mem (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n2: 100663308 0x10D339: xMPI_Alloc_mem (utils.c:70)
+   n0: 67108872 0x10AC15: main (main.c:343)
+   n0: 33554436 in 1 place, below massif's threshold (1.00%)
+ n0: 9805316 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=2405118706796
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2560915485046
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2638848533429
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2761656775183
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2839555553632
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2950325305650
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=3073167248359
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=3151065901139
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=3261835499598
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=3384761862970
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=3495615954766
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=3573514456449
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=3696440227212
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=3807293684617
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=3930135831292
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=4040939960942
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=4196786105970
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=4301033732347
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=4430565237148
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=4508464007018
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3466937900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3356469276 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n1: 1610588160 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 1610588160 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 1610588160 0x10AA94: main (main.c:296)
+  n0: 135268380 in 10 places, all below massif's threshold (1.00%)
+ n1: 100663308 0x4A73C37: PMPI_Alloc_mem (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n2: 100663308 0x10D339: xMPI_Alloc_mem (utils.c:70)
+   n0: 67108872 0x10AC15: main (main.c:343)
+   n0: 33554436 in 1 place, below massif's threshold (1.00%)
+ n0: 9805316 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=4606393633491
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=4742159674472
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3466937900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3356469276 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n1: 1610588160 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 1610588160 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 1610588160 0x10AA94: main (main.c:296)
+  n0: 135268380 in 10 places, all below massif's threshold (1.00%)
+ n1: 100663308 0x4A73C37: PMPI_Alloc_mem (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n2: 100663308 0x10D339: xMPI_Alloc_mem (utils.c:70)
+   n0: 67108872 0x10AC15: main (main.c:343)
+   n0: 33554436 in 1 place, below massif's threshold (1.00%)
+ n0: 9805316 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=4865001548030
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=5020798597980
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=5164034357497
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=5287448673244
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=5410207554273
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=5463102801737
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=5463194130114
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=5469059712263
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=5469160381171
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3466937900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 3356469276 0x110FCD: xmalloc (utils.c:115)
+  n0: 1610612736 0x10AFC8: main (main.c:228)
+  n1: 1610588160 0x10C819: convert_graph_to_oned_csr (csr_reference.c:150)
+   n1: 1610588160 0x10BD06: make_graph_data_structure (bfs_reference.c:68)
+    n0: 1610588160 0x10AA94: main (main.c:296)
+  n0: 135268380 in 10 places, all below massif's threshold (1.00%)
+ n1: 100663308 0x4A73C37: PMPI_Alloc_mem (in /usr/lib/x86_64-linux-gnu/libmpich.so.12.1.8)
+  n2: 100663308 0x10D339: xMPI_Alloc_mem (utils.c:70)
+   n0: 67108872 0x10AC15: main (main.c:343)
+   n0: 33554436 in 1 place, below massif's threshold (1.00%)
+ n0: 9805316 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=5469351395464
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=5477865834057
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=5487772303854
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=5487937951801
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=5488022104874
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=5488105995401
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=5521060973738
+mem_heap_B=3466937900
+mem_heap_extra_B=56012
+mem_stacks_B=0
+heap_tree=empty

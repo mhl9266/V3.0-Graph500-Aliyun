@@ -1,0 +1,4 @@
+Command: np=8, scale=100 Execution Time: 2.995325896 seconds
+
+Command: np=8, scale=100 Memory Usage:  bytes
+
