@@ -22,6 +22,10 @@
 #include <assert.h>
 #include <search.h>
 
+#define CLEAN_VISITED()  memset(visited,0,visited_size*sizeof(unsigned long));
+unsigned long *visited;
+int64_t visited_size;
+
 int64_t nverts_known = 0;
 int *degrees;
 int64_t *column;
@@ -84,18 +88,29 @@ void convert_graph_to_oned_csr(const tuple_graph* const tg, oned_csr_graph* cons
 
 	aml_register_handler(halfedgehndl,1);
 	int numiters=ITERATE_TUPLE_GRAPH_BLOCK_COUNT(tg);
+	int64_t self_loop_edges = 0;
+	
 	// First pass : calculate degrees of each vertex
 	ITERATE_TUPLE_GRAPH_BEGIN(tg, buf, bufsize,wbuf) {
 		ptrdiff_t j;
 		for (j = 0; j < bufsize; ++j) {
 			int64_t v0 = get_v0_from_edge(&buf[j]);
 			int64_t v1 = get_v1_from_edge(&buf[j]);
-			if(v0==v1) continue;
+			if(v0==v1) {
+				self_loop_edges++;
+				continue;
+			}
 			send_half_edge(v0, v1);
 			send_half_edge(v1, v0);
 		}
 		aml_barrier();
 	} ITERATE_TUPLE_GRAPH_END;
+	
+	aml_long_allsum(&self_loop_edges);
+	
+	if(my_pe()==0){
+		printf("Self_loop edge number:count:%lld\n",self_loop_edges);
+	}
 
 	int64_t nglobalverts = 0;
 	aml_long_allmax(&nverts_known);
@@ -175,8 +190,63 @@ void convert_graph_to_oned_csr(const tuple_graph* const tg, oned_csr_graph* cons
 		}
 		aml_barrier();
 	} ITERATE_TUPLE_GRAPH_END;
+	
+	/*
+	
+	void compute_components(tg,g){
+		int64_t* pred_glob = (int64_t*)malloc(nlocalverts * sizeof(int64_t));
+		
+		struct Component{
+    			int vertex;
+    			int component_id;
+		};
+		struct Component components[nlocalverts];
 
+		for (int64_t i = 0; i < nlocalverts; ++i) {
+        		components[i].vertex = i;
+        		components[i].component_id = -1;
+		}
+		
+		CLEAN_VISITED();  // 清除访问标记
+
+		// 循环遍历每个顶点，运行BFS并计算连通分量
+		
+		int component_id = 0;
+		for (int64_t i = 0;( (i < nlocalverts )&&(rowstarts[i]<rowstarts[i+1])); ++i) {
+			
+			int64_t* pred = (int64_t*)malloc(nlocalverts * sizeof(int64_t));
+			if (!TEST_VISITEDLOC(i)) {
+            	
+				if(VERTEX_OWNER(root) == rank) {
+				pred[VERTEX_LOCAL(root)]=root;
+				SET_VISITED(root);
+				q1[0]=VERTEX_LOCAL(root);
+				qc=1;
+				} 
+				
+				while(sum){
+					
+
+        			// 设置连通分量ID
+				for (int64_t j = 0; j < nlocalverts; ++j) {
+					if (TEST_VISITEDLOC(j)) {
+					components[j].component_id = component_id;
+				}
+			}
+
+			free(pred);
+			component_id++;
+			}
+
+		printf("connected conponent:%d\n",component_id);
+		
+		}
+		
+	}
+	*/
 	free(degrees);
+	
+	
 }
 
 void free_oned_csr_graph(oned_csr_graph* const g) {

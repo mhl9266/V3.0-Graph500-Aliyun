@@ -22,6 +22,8 @@
 #include <limits.h>
 #include <assert.h>
 #include <stdint.h>
+#include <stdbool.h>
+
 
 #ifdef DEBUGSTATS
 extern int64_t nbytes_sent,nbytes_rcvd;
@@ -75,6 +77,106 @@ void make_graph_data_structure(const tuple_graph* const tg) {
 	q2 = xmalloc(g.nlocalverts*sizeof(int));
 	for(i=0;i<g.nlocalverts;i++) q1[i]=0,q2[i]=0; //touch memory
 	visited = xmalloc(visited_size*sizeof(unsigned long));
+}
+
+void compute_components(int64_t root, int64_t *pred)
+{
+	
+	bool* visited = (bool*)malloc((g.nglobalverts -1)* sizeof(bool));
+	if (visited == NULL) {
+        // 内存分配失败处理
+        	fprintf(stderr, "Memory allocation failed.\n");
+        	exit(EXIT_FAILURE);
+    	}
+
+    	// 将 visited 数组初始化为 false
+    	for (int i = 0; i < g.nglobalverts-1; i++) {
+        	visited[i] = false;
+    	}
+    	
+	int nconnection = 0;
+	int nconnectnode = 0;
+	printf("Compute Connection Begin:\n");
+	
+	for (unsigned int i = 0; ((i < g.nglobalverts-1) && (rowstarts[i] != rowstarts[i+1])); i++)
+	{
+		
+		if (!visited[i])
+		{
+			long sum;
+			unsigned int j, k, lvl = 1;
+			
+			
+
+			qc = 0;
+			sum = 1;
+			q2c = 0;
+
+			int64_t visited_count = 1;
+			
+			
+			visited[i]=true;
+			q1[0] = i;
+			qc = 1;
+			
+
+			// While there are vertices in current level
+			while (sum)
+			{
+
+				// for all vertices in current level send visit AMs to all neighbours
+				for (int m=0; m < qc; m++)
+					for (j = rowstarts[q1[m]]; j < rowstarts[q1[m]+1];++j)
+						if(!visited[COLUMN(j)]){
+							q2[q2c++]=COLUMN(j);
+							visited[COLUMN(j)]=true;
+							visited_count++;
+						}
+						
+				printf("bfs lv-%d   new-node:%d \n",lvl++,q2c);
+				
+				qc = q2c;
+				int *tmp = q1;
+				q1 = q2;
+				q2 = tmp;
+				sum = qc;
+				q2c = 0;
+
+			}
+			
+			nconnectnode += visited_count;
+			printf("第%d个连通分量完成，新遍历%d个节点，累计%d个节点\n",++nconnection,visited_count,nconnectnode);
+		}
+	}
+	printf("连通分量计算结束,共计%d个连通分量,connectnode:%d\n",nconnection,nconnectnode);
+	
+	free(visited);
+}
+
+void countTriangles()
+{	
+	
+	unsigned int count = 0;
+	for (unsigned int i = 0; i < (g.nglobalverts - 1); i++)
+	{
+		//first edge j, second node COLUMN(j)
+		for (unsigned int j = rowstarts[i]; j < rowstarts[i + 1]; j++)
+		{
+			//second edge k, third node COLUMN(k)
+			for (unsigned int k = rowstarts[COLUMN(j)]; k < rowstarts[COLUMN(j)+ 1]; k++)
+			{	
+				//third edge m,
+				for(unsigned int m = rowstarts[COLUMN(k)];(m < rowstarts[COLUMN(k) + 1] &&(COLUMN(m) == i));m++){
+					count++;
+				}
+			}
+		}
+		if(i<20){
+		printf("Total Triangle:%d\n",count);
+		}
+		
+	}
+	printf("total count:%d/n", count);
 }
 
 void run_bfs(int64_t root, int64_t* pred) {

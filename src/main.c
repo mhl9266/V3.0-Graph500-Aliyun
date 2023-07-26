@@ -343,7 +343,15 @@ int main(int argc, char** argv) {
 	int64_t* pred = (int64_t*)xMPI_Alloc_mem(nlocalverts * sizeof(int64_t));
 	float* shortest = (float*)xMPI_Alloc_mem(nlocalverts * sizeof(float));
 
-
+	/*连通分量分析*/
+	clean_pred(&pred[0]); 
+	compute_components(bfs_roots[0],&pred[0]);
+	
+	/*Triangle counter*/
+	printf("三角形计数开始\n");
+	countTriangles();
+	printf("三角形计数结束\n");
+	
 	int bfs_root_idx,i;
 	if (!getenv("SKIP_BFS")) {
 		clean_pred(&pred[0]); //user-provided function from bfs_implementation.c
